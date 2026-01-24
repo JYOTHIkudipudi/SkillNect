@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SkillNect - Profile &amp; Settings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .ios-blur {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-white transition-colors duration-300">
+<!-- Main Container (Phone Form Factor) -->
+<div class="relative mx-auto min-h-screen max-w-[430px] bg-background-light dark:bg-background-dark shadow-2xl overflow-x-hidden pb-12">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 ios-blur border-b border-gray-200 dark:border-gray-800">
+<div class="flex items-center px-4 py-3 justify-between">
+<div class="text-primary flex size-10 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-2xl">arrow_back_ios</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Profile &amp; Settings</h2>
+<div class="flex w-10 items-center justify-end">
+<button class="flex cursor-pointer items-center justify-center rounded-lg h-10 w-10 bg-transparent text-primary">
+<span class="material-symbols-outlined">share</span>
+</button>
+</div>
+</div>
+</header>
+<!-- ProfileHeader with Gradient Accent -->
+<div class="relative @container pt-6">
+<div class="flex w-full flex-col gap-4 items-center px-4">
+<div class="relative">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32 border-4 border-primary/20 shadow-xl" data-alt="Professional portrait of Alex Rivera in a workspace" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD2dwAsJ8eKOVrBrKHgNplHVzhW_30rn_pp7NAmzDfgx2EMC6SF-INY-gIcK2wWSopN2XQsTM2zz6vOZXU5aVDxt6ktLAn6dVM6FCJubW6A4abmEViMAmfjMCsJiHMx0I_1qbhSAp6RYbF1ASF8JRc1qnAN1oT-A8YgFBvtVCFQ2GHgiEgk_F3qholLpEFK_xKZgay8uDpPQ00mDvloOp4XKIciuBecpPvLPbWhwIhez9rw03NpMKNwMYFp1gbii4P29HNWnyigfs0z");'>
+</div>
+<div class="absolute bottom-1 right-1 bg-primary text-white p-2 rounded-full shadow-lg border-2 border-background-dark">
+<span class="material-symbols-outlined text-sm">photo_camera</span>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center">
+<p class="text-[24px] font-bold leading-tight tracking-tight text-center">Alex Rivera</p>
+<p class="text-primary font-medium text-base text-center">Senior UI Designer • SF, CA</p>
+<div class="mt-2 flex items-center gap-1.5 px-3 py-1 bg-primary/10 rounded-full border border-primary/20">
+<span class="material-symbols-outlined text-sm text-primary">verified</span>
+<span class="text-xs font-bold text-primary uppercase tracking-wider">Expert Level</span>
+</div>
+</div>
+<div class="flex gap-3 w-full max-w-[400px]">
+<button class="flex flex-1 items-center justify-center gap-2 rounded-xl h-11 bg-primary text-white text-sm font-bold shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-sm">edit</span>
+<span>Edit Profile</span>
+</button>
+<button class="flex aspect-square items-center justify-center rounded-xl h-11 bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300">
+<span class="material-symbols-outlined">qr_code_2</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Account Statistics Section Header -->
+<div class="px-4 pb-2 pt-8 flex items-center justify-between">
+<h3 class="text-sm font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">Activity Overview</h3>
+<span class="text-primary text-xs font-semibold cursor-pointer">View History</span>
+</div>
+<!-- ProfileStats -->
+<div class="flex flex-wrap gap-3 px-4 py-3">
+<div class="flex min-w-[100px] flex-1 basis-[fit-content] flex-col gap-1 rounded-xl border border-gray-200 dark:border-gray-800 bg-white/50 dark:bg-gray-900/50 p-4 items-center text-center shadow-sm">
+<p class="text-primary tracking-tight text-2xl font-bold">12</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-medium uppercase tracking-tighter">Courses</p>
+</div>
+<div class="flex min-w-[100px] flex-1 basis-[fit-content] flex-col gap-1 rounded-xl border border-gray-200 dark:border-gray-800 bg-white/50 dark:bg-gray-900/50 p-4 items-center text-center shadow-sm">
+<p class="text-primary tracking-tight text-2xl font-bold">85%</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-medium uppercase tracking-tighter">Completion</p>
+</div>
+<div class="flex min-w-[100px] flex-1 basis-[fit-content] flex-col gap-1 rounded-xl border border-gray-200 dark:border-gray-800 bg-white/50 dark:bg-gray-900/50 p-4 items-center text-center shadow-sm">
+<p class="text-primary tracking-tight text-2xl font-bold">4.9</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-medium uppercase tracking-tighter">Rating</p>
+</div>
+</div>
+<!-- Account Settings List -->
+<div class="px-4 pb-2 pt-8">
+<h3 class="text-sm font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">Account Settings</h3>
+</div>
+<div class="mx-4 mt-2 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 divide-y divide-gray-100 dark:divide-gray-800">
+<!-- Personal Info Item -->
+<div class="flex items-center justify-between p-4 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+<div class="flex items-center gap-3">
+<div class="size-9 rounded-lg bg-blue-100 dark:bg-blue-900/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">person</span>
+</div>
+<div>
+<p class="text-[15px] font-semibold">Personal Information</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">Email, Phone, Bio</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-gray-400 text-sm">chevron_right</span>
+</div>
+<!-- Password Item -->
+<div class="flex items-center justify-between p-4 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+<div class="flex items-center gap-3">
+<div class="size-9 rounded-lg bg-purple-100 dark:bg-purple-900/40 flex items-center justify-center text-purple-600 dark:text-purple-400">
+<span class="material-symbols-outlined">lock</span>
+</div>
+<div>
+<p class="text-[15px] font-semibold">Security</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">Password, 2FA, Biometrics</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-gray-400 text-sm">chevron_right</span>
+</div>
+<!-- Notifications Toggle -->
+<div class="flex items-center justify-between p-4">
+<div class="flex items-center gap-3">
+<div class="size-9 rounded-lg bg-orange-100 dark:bg-orange-900/40 flex items-center justify-center text-orange-600 dark:text-orange-400">
+<span class="material-symbols-outlined">notifications</span>
+</div>
+<div>
+<p class="text-[15px] font-semibold">Push Notifications</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">Job alerts, Course updates</p>
+</div>
+</div>
+<div class="relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full bg-primary transition-colors duration-200 ease-in-out border-2 border-transparent">
+<span class="translate-x-5 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+</div>
+</div>
+<!-- Dark Mode Toggle -->
+<div class="flex items-center justify-between p-4">
+<div class="flex items-center gap-3">
+<div class="size-9 rounded-lg bg-gray-100 dark:bg-gray-700/40 flex items-center justify-center text-gray-600 dark:text-gray-400">
+<span class="material-symbols-outlined">dark_mode</span>
+</div>
+<div>
+<p class="text-[15px] font-semibold">Dark Mode</p>
+<p class="text-xs text-gray-500 dark:text-gray-400">Current appearance</p>
+</div>
+</div>
+<div class="relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full bg-primary transition-colors duration-200 ease-in-out border-2 border-transparent">
+<span class="translate-x-5 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+</div>
+</div>
+</div>
+<!-- Preferences Section -->
+<div class="px-4 pb-2 pt-8">
+<h3 class="text-sm font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">Learning Preferences</h3>
+</div>
+<div class="mx-4 mt-2 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 divide-y divide-gray-100 dark:divide-gray-800">
+<div class="flex items-center justify-between p-4 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+<div class="flex items-center gap-3">
+<div class="size-9 rounded-lg bg-emerald-100 dark:bg-emerald-900/40 flex items-center justify-center text-emerald-600 dark:text-emerald-400">
+<span class="material-symbols-outlined">workspace_premium</span>
+</div>
+<p class="text-[15px] font-semibold">Skills &amp; Certifications</p>
+</div>
+<span class="material-symbols-outlined text-gray-400 text-sm">chevron_right</span>
+</div>
+<div class="flex items-center justify-between p-4 cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
+<div class="flex items-center gap-3">
+<div class="size-9 rounded-lg bg-red-100 dark:bg-red-900/40 flex items-center justify-center text-red-600 dark:text-red-400">
+<span class="material-symbols-outlined">help</span>
+</div>
+<p class="text-[15px] font-semibold">Support &amp; Help Center</p>
+</div>
+<span class="material-symbols-outlined text-gray-400 text-sm">chevron_right</span>
+</div>
+</div>
+<!-- Footer Actions -->
+<div class="px-4 pt-10 pb-8 flex flex-col gap-4">
+<button class="w-full h-12 flex items-center justify-center gap-2 rounded-xl bg-gray-200 dark:bg-gray-800 font-bold text-gray-700 dark:text-gray-300">
+<span class="material-symbols-outlined text-xl">info</span>
+                About SkillNect v2.4.0
+            </button>
+<button class="w-full h-12 flex items-center justify-center gap-2 rounded-xl border border-red-500/30 text-red-500 font-bold hover:bg-red-50 dark:hover:bg-red-950/20 transition-all">
+<span class="material-symbols-outlined text-xl">logout</span>
+                Sign Out
+            </button>
+<p class="text-center text-xs text-gray-500 dark:text-gray-500 pt-4">© 2024 SkillNect Learning Systems</p>
+</div>
+<!-- Navigation Bar (iOS Style) -->
+<nav class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[430px] bg-background-light/95 dark:bg-background-dark/95 ios-blur border-t border-gray-200 dark:border-gray-800 px-8 py-3 flex items-center justify-between shadow-lg">
+<div class="flex flex-col items-center text-gray-400 cursor-pointer">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium mt-0.5">Home</span>
+</div>
+<div class="flex flex-col items-center text-gray-400 cursor-pointer">
+<span class="material-symbols-outlined">school</span>
+<span class="text-[10px] font-medium mt-0.5">Learn</span>
+</div>
+<div class="flex flex-col items-center text-gray-400 cursor-pointer">
+<span class="material-symbols-outlined">work</span>
+<span class="text-[10px] font-medium mt-0.5">Jobs</span>
+</div>
+<div class="flex flex-col items-center text-primary cursor-pointer">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="text-[10px] font-medium mt-0.5">Profile</span>
+</div>
+</nav>
+</div>
+</body></html>

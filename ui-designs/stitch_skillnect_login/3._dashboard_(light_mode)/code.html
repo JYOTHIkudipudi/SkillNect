@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SkillNect Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            -webkit-tap-highlight-color: transparent;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#111418] dark:text-white">
+<div class="relative flex min-h-screen w-full flex-col max-w-[430px] mx-auto bg-white dark:bg-background-dark overflow-x-hidden shadow-2xl">
+<!-- TopAppBar -->
+<header class="flex items-center bg-white dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-50 border-b border-gray-100 dark:border-gray-800">
+<div class="text-primary flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-3xl">bolt</span>
+</div>
+<h2 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 ml-2">SkillNect</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex cursor-pointer items-center justify-center rounded-full h-10 w-10 bg-gray-50 dark:bg-gray-800 text-[#111418] dark:text-white transition-colors active:bg-gray-200">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+</header>
+<!-- Main Content Scroll Area -->
+<main class="flex-1 overflow-y-auto">
+<!-- SectionHeader: User Greeting -->
+<div class="px-4 pt-6 pb-2">
+<h2 class="text-[#111418] dark:text-white text-[24px] font-bold leading-tight tracking-[-0.015em]">Welcome Back, Alex! 👋</h2>
+</div>
+<!-- BodyText: Progress Update -->
+<div class="px-4 pb-6">
+<div class="bg-primary/10 dark:bg-primary/20 rounded-xl p-4 flex items-center gap-4">
+<div class="flex-1">
+<p class="text-primary dark:text-blue-400 text-sm font-semibold uppercase tracking-wider mb-1">Weekly Goal</p>
+<p class="text-[#111418] dark:text-white text-base font-normal leading-normal">Your career growth is 75% complete. Keep going!</p>
+</div>
+<div class="relative flex items-center justify-center">
+<svg class="w-12 h-12">
+<circle class="text-primary/20" cx="24" cy="24" fill="transparent" r="20" stroke="currentColor" stroke-width="4"></circle>
+<circle class="text-primary" cx="24" cy="24" fill="transparent" r="20" stroke="currentColor" stroke-dasharray="125.6" stroke-dashoffset="31.4" stroke-linecap="round" stroke-width="4"></circle>
+</svg>
+<span class="absolute text-[10px] font-bold">75%</span>
+</div>
+</div>
+</div>
+<!-- SectionHeader: Features Title -->
+<div class="px-4 pb-2">
+<h3 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Personalized Tools</h3>
+</div>
+<!-- ImageGrid: Feature Cards -->
+<div class="grid grid-cols-2 gap-4 p-4">
+<!-- Resume Analyzer -->
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square shadow-sm active:scale-95 transition-transform overflow-hidden" data-alt="Modern blue gradient abstract pattern for Resume Analyzer tool" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCYQ8XJ4nWAxfy2X1Fqr5U1MCb3S0x0v2t18aY6mb35ppDK1Sj6ou5gdYj3XgvUCcuSMPcVuuYeXLRyXFaDEW5cLj2YVQQIGLeunlK9mdRFuF3YHeSsqN8r0Ic_uukneJQfKN1Wm8rhBfDOYKDFLU2WzEOUePI9VjwQHkcY_8JagG8if2AHHNqyr5ZISK5rtIjOujj5dXizbY8RcIDEA0U_vU6a5MuA1c1khScuco-j1q5_p1WyeigYwGxYWcoQI77gsvPatGHQlqCZ");'>
+<div class="absolute top-3 left-3 bg-white/20 backdrop-blur-md rounded-lg p-2">
+<span class="material-symbols-outlined text-white">description</span>
+</div>
+<p class="text-white text-base font-bold leading-tight w-full">Resume Analyzer</p>
+</div>
+<!-- Career Roadmap -->
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square shadow-sm active:scale-95 transition-transform overflow-hidden" data-alt="Aerial view of a winding path through a park for Career Roadmap tool" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDtlZNj2ynsN-6Pw6wVMaSCEuZN8rCX2qYFNNRsJN4GTyWpjvBkedEe3HvMIhGyU_x3li8ZNbZ9Kwp2f0qI1jon0_I4y5ci8W8e5-jpDuUN1uBIz92AENx5YZCSGFkqhQvK40FPIbWcWXoJKdoyCEA-ajPrWm4LiRjZDHXvxoR8EtEyp-qkOOEfasU4z0Vxln7c3882gPrxxqwR1j3-sr75jzVeBfgK7HPZZ40ALiP-F-NF9KZ-LI1DnO2bG5aZWPJkAx4bkUgnnTyj");'>
+<div class="absolute top-3 left-3 bg-white/20 backdrop-blur-md rounded-lg p-2">
+<span class="material-symbols-outlined text-white">map</span>
+</div>
+<p class="text-white text-base font-bold leading-tight w-full">Career Roadmap</p>
+</div>
+<!-- Skill Assessment -->
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square shadow-sm active:scale-95 transition-transform overflow-hidden" data-alt="Glowing brain icon representing digital intelligence for Skill Assessment" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAYx0BRLqohbi2dsCunfSXuXNMpgMq0n1u81PjbW9sNO2gC7kElyvpb6duAXIGKOT_Wb6nHyfOYQ9E_bLCVtHIMZBoGq_Uc-LKuk-qyk3wD6voMrzzt8ivdPqDr2eKs_xiaBZbc6J5z20aip5vQ6WeXM0u0cEhx3rwd1Sowe0V9OkbSZ9g3L0SWrmnC3yzL5nEx3IIYTOZJuhW4W0uFgdhVTCdnVTCrp_BgjvEFZgOo-HzTsdNixZ0tgfHrDmdhJmDgvuvLmH4vbWL1");'>
+<div class="absolute top-3 left-3 bg-white/20 backdrop-blur-md rounded-lg p-2">
+<span class="material-symbols-outlined text-white">quiz</span>
+</div>
+<p class="text-white text-base font-bold leading-tight w-full">Skill Assessment</p>
+</div>
+<!-- Job Matcher -->
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square shadow-sm active:scale-95 transition-transform overflow-hidden" data-alt="Two puzzle pieces fitting together for Job Matcher tool" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBpbZD21h1Dg47c9qS--9wAPYq90xGzyrr2plHfb26sIFRneMoBlsRNQ378BXIVS6wGVmaOM27necP-gL0mKyMnDhpW-JwvhwEhaw9G3rVqCUdnW63SL_PNeFLaUHCYVtPMIG8C05Z9PMTuPZWCbkQ_rW1QF1BMvFWs1hrrY2kaOkq6swbPTGDnok3Ul6pG8ZwqsJmMnJQcohkT7T7m7H6d9DerWx6_u98toL0F9L_HyKmdM_XA8Tpsq0OU977Rawfblm46_4PNsFHF");'>
+<div class="absolute top-3 left-3 bg-white/20 backdrop-blur-md rounded-lg p-2">
+<span class="material-symbols-outlined text-white">handshake</span>
+</div>
+<p class="text-white text-base font-bold leading-tight w-full">Job Matcher</p>
+</div>
+<!-- Learning Paths -->
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square shadow-sm active:scale-95 transition-transform overflow-hidden" data-alt="Stack of books and a graduation cap for Learning Paths" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC5ndl267EOUCK7LK1D5cd2xjsghBk5vbEKKDqr6_h4qxXyA67hkGBNacO2m0StJPlkXdF8SvRd1h1r0j5rgPEV6jjT-8chhOHkhEWYgal9Q1scqq2kP1qBfuFij7OoQtNONHVY4bkWzfcoa32mMuzkflZV-6oiu3N1yweL8Wh3VPm8agx5FCH3g7uPJ3qmpml48VNdJ3re13skh4_tctbyx8mIZI5Tsdv01DTnkhgYMurpsb66cGWpgh3S7MPHcePx7zIwY7ZfXxnX");'>
+<div class="absolute top-3 left-3 bg-white/20 backdrop-blur-md rounded-lg p-2">
+<span class="material-symbols-outlined text-white">school</span>
+</div>
+<p class="text-white text-base font-bold leading-tight w-full">Learning Paths</p>
+</div>
+<!-- Interview Prep -->
+<div class="group relative bg-cover bg-center flex flex-col gap-3 rounded-xl justify-end p-4 aspect-square shadow-sm active:scale-95 transition-transform overflow-hidden" data-alt="Microphone on a desk for Interview Prep practice" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCiJMDA4cNumK-I7LfdG7A3Ge-6ofl0yH6fOtUsbSW62ZQfNTKzB5FwU2OqwIfE62xd71AgTLH3GKDBTVDxERjCiVHj-iBdAgRUSF2hAzchw9kDs9Wl1aLVI-4ZvXK41h-bmVkkmgNVBU9G_FTz11DUP3pNAolLqd6xBOz1gRNQ910leD9b-YHmq27O7qur67GSGDouHEX6qi6Sz2hyHXu1d5y4P4tC2y6udboHqVaW1wKsu9dArWXqgk6FemlY7GBn5JeBtfwXxnOB");'>
+<div class="absolute top-3 left-3 bg-white/20 backdrop-blur-md rounded-lg p-2">
+<span class="material-symbols-outlined text-white">forum</span>
+</div>
+<p class="text-white text-base font-bold leading-tight w-full">Interview Prep</p>
+</div>
+</div>
+<!-- Quick Stats Section -->
+<div class="px-4 pt-4">
+<h3 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] mb-4">Quick Stats</h3>
+<div class="grid grid-cols-2 gap-4 mb-10">
+<div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-xl border border-gray-100 dark:border-gray-700">
+<p class="text-gray-500 dark:text-gray-400 text-sm">Jobs Applied</p>
+<p class="text-2xl font-bold mt-1">24</p>
+</div>
+<div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-xl border border-gray-100 dark:border-gray-700">
+<p class="text-gray-500 dark:text-gray-400 text-sm">Skills Mastered</p>
+<p class="text-2xl font-bold mt-1 text-primary">12</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Tab Navigation (iOS Style) -->
+<nav class="flex items-center justify-around bg-white/80 dark:bg-background-dark/80 backdrop-blur-lg border-t border-gray-100 dark:border-gray-800 h-20 pb-4">
+<button class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-400">
+<span class="material-symbols-outlined">explore</span>
+<span class="text-[10px] font-medium">Roadmaps</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-400">
+<span class="material-symbols-outlined">search</span>
+<span class="text-[10px] font-medium">Search</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-400">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium">Profile</span>
+</button>
+</nav>
+</div>
+</body></html>

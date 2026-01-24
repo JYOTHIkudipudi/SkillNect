@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SkillNect Career Roadmap</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .timeline-gradient-node {
+            background: linear-gradient(135deg, #137fec 0%, #60a5fa 100%);
+        }
+        .ios-shadow {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-white dark:bg-background-dark group/design-root overflow-x-hidden max-w-[430px] mx-auto shadow-2xl">
+<!-- TopAppBar -->
+<div class="flex items-center bg-white dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-50">
+<div class="text-[#111418] dark:text-white flex size-12 shrink-0 items-center cursor-pointer">
+<span class="material-symbols-outlined">arrow_back_ios</span>
+</div>
+<h2 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Career Roadmap</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-[#111418] dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</div>
+<!-- Progress Summary -->
+<div class="px-4 py-2">
+<div class="bg-white dark:bg-slate-800 rounded-xl p-4 ios-shadow border border-slate-100 dark:border-slate-700">
+<div class="flex flex-col gap-3">
+<div class="flex gap-6 justify-between">
+<p class="text-[#111418] dark:text-white text-base font-semibold leading-normal">Overall Progress</p>
+<p class="text-primary text-sm font-bold leading-normal">45%</p>
+</div>
+<div class="rounded-full bg-slate-100 dark:bg-slate-700 h-2 overflow-hidden">
+<div class="h-full rounded-full bg-primary" style="width: 45%;"></div>
+</div>
+<p class="text-[#617589] dark:text-slate-400 text-xs font-medium leading-normal">Path: Junior Developer to Senior Architect</p>
+</div>
+</div>
+</div>
+<!-- Section Header -->
+<h2 class="text-[#111418] dark:text-white text-[20px] font-bold leading-tight tracking-[-0.015em] px-4 pb-1 pt-6">Your Journey</h2>
+<!-- Timeline Section -->
+<div class="px-4 py-4">
+<div class="grid grid-cols-[40px_1fr] gap-x-3">
+<!-- Step 1: Completed -->
+<div class="flex flex-col items-center gap-1">
+<div class="flex items-center justify-center size-8 rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined !text-[20px]">check_circle</span>
+</div>
+<div class="w-[2px] bg-primary h-12 grow"></div>
+</div>
+<div class="flex flex-1 flex-col pb-8">
+<div class="flex items-center justify-between">
+<p class="text-[#111418] dark:text-white text-base font-semibold leading-normal">Foundations of Web Development</p>
+<span class="text-[10px] font-bold uppercase tracking-wider text-green-600 bg-green-50 px-2 py-0.5 rounded">Completed</span>
+</div>
+<p class="text-[#617589] dark:text-slate-400 text-sm font-normal leading-normal">HTML5, CSS3, ES6 Fundamentals</p>
+<p class="text-[#617589] dark:text-slate-400 text-[11px] mt-1 italic">Finished Jan 2024</p>
+</div>
+<!-- Step 2: In Progress -->
+<div class="flex flex-col items-center gap-1">
+<div class="flex items-center justify-center size-10 rounded-full timeline-gradient-node text-white shadow-lg shadow-primary/30 z-10">
+<span class="material-symbols-outlined !text-[24px]">play_circle</span>
+</div>
+<div class="w-[2px] bg-slate-200 dark:bg-slate-700 h-24 grow border-dashed border-l-2"></div>
+</div>
+<div class="flex flex-1 flex-col pb-8">
+<div class="bg-primary/5 dark:bg-primary/10 border border-primary/20 rounded-xl p-4">
+<div class="flex items-center justify-between mb-1">
+<p class="text-[#111418] dark:text-white text-base font-bold leading-normal">Junior Frontend Developer</p>
+<span class="text-[10px] font-bold uppercase tracking-wider text-primary animate-pulse">Current</span>
+</div>
+<p class="text-[#617589] dark:text-slate-400 text-sm font-normal leading-normal mb-3">React, Tailwind CSS, API Integration</p>
+<div class="flex gap-2">
+<button class="bg-primary text-white text-xs font-bold px-3 py-1.5 rounded-lg">View Tasks</button>
+<button class="bg-white dark:bg-slate-800 text-[#111418] dark:text-white text-xs font-bold px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-600">Resources</button>
+</div>
+</div>
+</div>
+<!-- Step 3: Locked -->
+<div class="flex flex-col items-center gap-1">
+<div class="flex items-center justify-center size-8 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-400">
+<span class="material-symbols-outlined !text-[18px]">lock</span>
+</div>
+<div class="w-[2px] bg-slate-100 dark:bg-slate-700 h-12 grow"></div>
+</div>
+<div class="flex flex-1 flex-col pb-8 opacity-60">
+<p class="text-[#111418] dark:text-white text-base font-semibold leading-normal">Mastering System Design</p>
+<p class="text-[#617589] dark:text-slate-400 text-sm font-normal leading-normal">Scalability, Caching, Databases</p>
+</div>
+<!-- Step 4: Locked -->
+<div class="flex flex-col items-center gap-1">
+<div class="flex items-center justify-center size-8 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-400">
+<span class="material-symbols-outlined !text-[18px]">lock</span>
+</div>
+</div>
+<div class="flex flex-1 flex-col opacity-60">
+<p class="text-[#111418] dark:text-white text-base font-semibold leading-normal">Senior Solution Architect</p>
+<p class="text-[#617589] dark:text-slate-400 text-sm font-normal leading-normal">Leadership &amp; Strategy</p>
+</div>
+</div>
+</div>
+<!-- Section Header Resources -->
+<h2 class="text-[#111418] dark:text-white text-[20px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-6">Essential Resources</h2>
+<!-- Resource Cards -->
+<div class="p-4 pt-0 space-y-4 pb-20">
+<!-- Card 1 -->
+<div class="flex items-stretch justify-between gap-4 rounded-xl bg-white dark:bg-slate-800 p-4 ios-shadow border border-slate-100 dark:border-slate-700">
+<div class="flex flex-[2_2_0px] flex-col justify-between">
+<div class="flex flex-col gap-1">
+<p class="text-[#111418] dark:text-white text-base font-bold leading-tight">Advanced React Patterns</p>
+<p class="text-[#617589] dark:text-slate-400 text-xs font-normal leading-normal">SkillNect Course • 4.9 stars</p>
+</div>
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-primary text-white text-xs font-bold leading-normal w-fit mt-3">
+<span class="truncate">Continue Learning</span>
+</button>
+</div>
+<div class="w-32 bg-slate-200 dark:bg-slate-700 bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex-shrink-0 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-blue-600/20"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl opacity-40">code</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex items-stretch justify-between gap-4 rounded-xl bg-white dark:bg-slate-800 p-4 ios-shadow border border-slate-100 dark:border-slate-700">
+<div class="flex flex-[2_2_0px] flex-col justify-between">
+<div class="flex flex-col gap-1">
+<p class="text-[#111418] dark:text-white text-base font-bold leading-tight">UI/UX Essentials</p>
+<p class="text-[#617589] dark:text-slate-400 text-xs font-normal leading-normal">Workshop • 1.5 hours remaining</p>
+</div>
+<button class="flex min-w-[100px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-8 px-4 bg-slate-100 dark:bg-slate-700 text-[#111418] dark:text-white text-xs font-bold leading-normal w-fit mt-3">
+<span class="truncate">Resume</span>
+</button>
+</div>
+<div class="w-32 bg-slate-200 dark:bg-slate-700 bg-center bg-no-repeat aspect-square bg-cover rounded-lg flex-shrink-0 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-indigo-400/20 to-purple-500/20"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-indigo-500 text-3xl opacity-40">palette</span>
+</div>
+</div>
+</div>
+</div>
+<!-- iOS Bottom Bar Placeholder -->
+<div class="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[430px] bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 px-8 py-4 flex justify-between items-center z-50">
+<div class="flex flex-col items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined">map</span>
+<span class="text-[10px] font-medium">Roadmap</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined">school</span>
+<span class="text-[10px] font-medium">Skills</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-slate-400">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium">Profile</span>
+</div>
+</div>
+<div class="h-20 bg-transparent"></div>
+</div>
+</body></html>

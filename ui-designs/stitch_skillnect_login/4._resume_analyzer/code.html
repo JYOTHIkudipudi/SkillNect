@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SkillNect - Resume Analyzer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex flex-col font-display transition-colors duration-300">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+<div class="flex items-center p-4 justify-between max-w-lg mx-auto w-full">
+<div class="text-gray-900 dark:text-white flex size-10 shrink-0 items-center justify-center cursor-pointer">
+<span class="material-symbols-outlined">arrow_back_ios</span>
+</div>
+<h2 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Resume Analyzer</h2>
+<div class="flex w-10 items-center justify-end">
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-transparent text-gray-900 dark:text-white">
+<span class="material-symbols-outlined">more_horiz</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 max-w-lg mx-auto w-full pb-24">
+<!-- HeadlineText & Score Gauge Section -->
+<section class="flex flex-col items-center py-8 px-4">
+<div class="relative flex items-center justify-center">
+<!-- Circular Progress Background -->
+<svg class="w-48 h-48 transform -rotate-90">
+<circle class="text-gray-200 dark:text-gray-800" cx="96" cy="96" fill="transparent" r="88" stroke="currentColor" stroke-width="12"></circle>
+<circle class="text-primary" cx="96" cy="96" fill="transparent" r="88" stroke="currentColor" stroke-dasharray="552.9" stroke-dashoffset="121.6" stroke-linecap="round" stroke-width="12"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<h1 class="text-gray-900 dark:text-white tracking-tight text-[44px] font-bold leading-none">78</h1>
+<span class="text-gray-500 dark:text-gray-400 text-sm font-medium">out of 100</span>
+</div>
+</div>
+<div class="mt-6 text-center">
+<p class="text-primary font-semibold text-lg">"Good Profile Strength"</p>
+<p class="text-gray-500 dark:text-gray-400 text-sm mt-1">Uploaded: Resume_John_Doe.pdf</p>
+</div>
+</section>
+<!-- ProgressBar Component (ATS Optimization) -->
+<div class="flex flex-col gap-3 px-6 py-4">
+<div class="flex gap-6 justify-between items-end">
+<p class="text-gray-900 dark:text-white text-base font-semibold leading-normal">ATS Optimization Score</p>
+<p class="text-primary text-sm font-bold leading-normal">78%</p>
+</div>
+<div class="rounded-full bg-gray-200 dark:bg-gray-800 h-2.5 overflow-hidden">
+<div class="h-full rounded-full bg-gradient-to-r from-primary to-blue-400" style="width: 78%;"></div>
+</div>
+<p class="text-gray-500 dark:text-[#9dabb9] text-sm font-normal leading-normal">Your resume is compatible with most enterprise ATS systems.</p>
+</div>
+<!-- ButtonGroup Section -->
+<div class="px-6 py-6">
+<div class="flex flex-col gap-3">
+<button class="flex items-center justify-center gap-2 rounded-xl h-14 px-5 bg-primary hover:bg-primary/90 text-white text-base font-bold leading-normal tracking-wide transition-all shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined">cloud_upload</span>
+<span class="truncate">Re-upload Resume</span>
+</button>
+<button class="flex items-center justify-center gap-2 rounded-xl h-14 px-5 bg-gray-200 dark:bg-[#283039] hover:bg-gray-300 dark:hover:bg-gray-700 text-gray-900 dark:text-white text-base font-bold leading-normal tracking-wide transition-all">
+<span class="material-symbols-outlined">description</span>
+<span class="truncate">Add Job Description</span>
+</button>
+</div>
+</div>
+<!-- SectionHeader: Improvement Suggestions -->
+<div class="px-6 pt-4">
+<h2 class="text-gray-900 dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em]">Improvement Suggestions</h2>
+<p class="text-gray-500 dark:text-gray-400 text-sm mt-1">Fix these items to increase your score.</p>
+</div>
+<!-- Suggestions List -->
+<div class="px-6 mt-4 space-y-4">
+<!-- Suggestion Card 1: Missing Keywords -->
+<div class="bg-white dark:bg-[#1a242f] p-4 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm flex gap-4">
+<div class="bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 p-2 rounded-lg h-fit">
+<span class="material-symbols-outlined">error</span>
+</div>
+<div class="flex-1">
+<h3 class="text-gray-900 dark:text-white font-bold text-base">Missing Keywords</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm mt-1 leading-relaxed">Your resume is missing critical industry keywords: <span class="text-primary font-medium">Cloud Architecture, CI/CD Pipelines, and Kubernetes.</span></p>
+</div>
+</div>
+<!-- Suggestion Card 2: Formatting -->
+<div class="bg-white dark:bg-[#1a242f] p-4 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm flex gap-4">
+<div class="bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 p-2 rounded-lg h-fit">
+<span class="material-symbols-outlined">warning</span>
+</div>
+<div class="flex-1">
+<h3 class="text-gray-900 dark:text-white font-bold text-base">Unreadable Formatting</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm mt-1 leading-relaxed">The multi-column layout in your 'Skills' section might be difficult for older ATS systems to parse correctly.</p>
+</div>
+</div>
+<!-- Suggestion Card 3: Metrics -->
+<div class="bg-white dark:bg-[#1a242f] p-4 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm flex gap-4">
+<div class="bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 p-2 rounded-lg h-fit">
+<span class="material-symbols-outlined">check_circle</span>
+</div>
+<div class="flex-1">
+<h3 class="text-gray-900 dark:text-white font-bold text-base">Quantifiable Impact</h3>
+<p class="text-gray-500 dark:text-gray-400 text-sm mt-1 leading-relaxed">Good job including metrics in your work history! Adding 2-3 more data points (e.g., % increase in efficiency) would be even better.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- iOS Style Bottom Tab Bar -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white/80 dark:bg-background-dark/80 backdrop-blur-lg border-t border-gray-200 dark:border-gray-800 px-6 py-3 pb-8 flex justify-between items-center z-50">
+<div class="flex flex-col items-center gap-1 text-gray-400">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-gray-400">
+<span class="material-symbols-outlined">explore</span>
+<span class="text-[10px] font-medium">Roadmap</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">analytics</span>
+<span class="text-[10px] font-medium">Analyze</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-gray-400">
+<span class="material-symbols-outlined">school</span>
+<span class="text-[10px] font-medium">Skills</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-gray-400">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium">Profile</span>
+</div>
+</nav>
+</body></html>

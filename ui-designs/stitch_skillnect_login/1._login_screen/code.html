@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SkillNect - Login</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "accent-purple": "#8b5cf6",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .gradient-button {
+            background: linear-gradient(90deg, #8b5cf6 0%, #137fec 100%);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #a78bfa 0%, #60a5fa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden max-w-[430px] mx-auto border-x border-gray-800 shadow-2xl">
+<!-- Status Bar Spacer (iOS) -->
+<div class="h-12 w-full"></div>
+<!-- TopAppBar Component (Modified) -->
+<div class="flex items-center p-4 pb-2 justify-between">
+<div class="w-10"></div> <!-- Spacer for symmetry -->
+<h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em] flex-1 text-center gradient-text">SkillNect</h2>
+<div class="w-10 flex justify-end text-white">
+<span class="material-symbols-outlined">info</span>
+</div>
+</div>
+<!-- Header Content -->
+<div class="px-6 pt-8 pb-4">
+<p class="text-gray-400 text-sm font-medium uppercase tracking-widest text-center mb-1">Empower Your Career</p>
+<h1 class="text-white tracking-tight text-[36px] font-bold leading-tight text-center">Welcome Back</h1>
+<p class="text-gray-400 text-base font-normal leading-normal pt-2 px-4 text-center">Your AI-powered career companion is ready to guide you.</p>
+</div>
+<!-- Login Form Section -->
+<div class="flex-1 mt-4 px-6">
+<div class="bg-white/5 dark:bg-white/5 rounded-xl p-2 backdrop-blur-sm border border-white/10">
+<!-- Email Field -->
+<div class="flex flex-col gap-1 px-4 py-3">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-gray-300 text-sm font-medium leading-normal pb-2 ml-1">Email Address</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#3b4754] bg-[#1c2127] focus:border-primary h-14 placeholder:text-[#6b7280] p-[15px] text-base font-normal leading-normal transition-all" placeholder="name@example.com" type="email" value=""/>
+</label>
+</div>
+<!-- Password Field -->
+<div class="flex flex-col gap-1 px-4 py-3">
+<label class="flex flex-col min-w-40 flex-1">
+<div class="flex justify-between items-center pb-2 px-1">
+<p class="text-gray-300 text-sm font-medium leading-normal">Password</p>
+<a class="text-primary text-xs font-semibold" href="#">Forgot?</a>
+</div>
+<div class="flex w-full flex-1 items-stretch rounded-lg group">
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-[#3b4754] bg-[#1c2127] focus:border-primary h-14 placeholder:text-[#6b7280] p-[15px] rounded-r-none border-r-0 pr-2 text-base font-normal leading-normal transition-all" placeholder="Enter password" type="password" value=""/>
+<div class="text-[#9dabb9] flex border border-[#3b4754] bg-[#1c2127] items-center justify-center pr-[15px] rounded-r-lg border-l-0 group-focus-within:border-primary transition-all">
+<span class="material-symbols-outlined text-xl">visibility</span>
+</div>
+</div>
+</label>
+</div>
+<!-- Primary Login Button -->
+<div class="px-4 py-6">
+<button class="gradient-button w-full h-14 rounded-xl text-white font-bold text-lg shadow-lg shadow-primary/20 hover:opacity-90 transition-opacity flex items-center justify-center gap-2">
+<span>Sign In</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Divider -->
+<div class="flex items-center my-8 px-4">
+<div class="flex-1 border-t border-gray-800"></div>
+<p class="px-4 text-gray-500 text-sm font-medium">or continue with</p>
+<div class="flex-1 border-t border-gray-800"></div>
+</div>
+<!-- Social Auth Icons -->
+<div class="flex justify-center gap-4 px-4 pb-8">
+<button class="flex-1 h-14 bg-[#1c2127] border border-[#3b4754] rounded-xl flex items-center justify-center hover:bg-white/10 transition-colors">
+<img alt="Google" class="w-6 h-6" data-alt="Google company logo for authentication" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCq6BNH3rVcTiKCohZaWPnGhFFEfEjQlDQVh7-b-Vhj61HoZx4w-I2g6pp3KU-i0uEW_q0kqz11QZEzFZPdqU1lInz_mdfhuk2crSGs0pc7vAObglWD2Q9PNLgGOX1fIF2ekXQw0x-6A3s7jy4k06oJtXvjD_8KYXPHSMV-_WPP1sswqiTmolK8OLqUENc3-v-LjxradxB6UScpxRnfFynkSweLmuDvwNG4eVoMs9RRLXZCWi-Hx2qu4WUh1RRdF-R_hQJH-EjMLsMG"/>
+</button>
+<button class="flex-1 h-14 bg-[#1c2127] border border-[#3b4754] rounded-xl flex items-center justify-center hover:bg-white/10 transition-colors">
+<img alt="Apple" class="w-6 h-6 invert" data-alt="Apple company logo for authentication" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1P-z3xV8ZJxL5G7MPxDmqxr5ZaVWvTjB8E4eSdRM46U_Ia8Hb_VdxuQ9L0vRAfZjI21QhCvF3UOQFhC8i6DBsCDaJ8SELaStzmv6_dQ5sUE0FHggolX4Fh9RwBvPHO6PL689_3_UjudqmrmvK6S9aFIzOmfPR-xdFiDP1biK0KeQ8u180wZvyd5b3We2FhDxlQp9jtGnOrvyuxH1ezBEBLw2yHvxs6Zo_9TcogwqnNDXR5xSYRJJ9jVF7oc36C8PxCs_0oEkErWsA"/>
+</button>
+</div>
+<!-- Sign Up Link -->
+<div class="pb-10 text-center">
+<p class="text-gray-400 text-sm">
+                    Don't have an account? 
+                    <a class="text-primary font-bold hover:underline" href="#">Create Account</a>
+</p>
+</div>
+</div>
+<!-- iOS Home Indicator Spacer -->
+<div class="h-8 flex items-center justify-center">
+<div class="w-32 h-1 bg-gray-800 rounded-full"></div>
+</div>
+</div>
+<!-- Background Decorative Elements -->
+<div class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none opacity-20">
+<div class="absolute top-[-10%] right-[-10%] w-[300px] h-[300px] bg-accent-purple rounded-full blur-[120px]"></div>
+<div class="absolute bottom-[-10%] left-[-10%] w-[300px] h-[300px] bg-primary rounded-full blur-[120px]"></div>
+</div>
+</body></html>

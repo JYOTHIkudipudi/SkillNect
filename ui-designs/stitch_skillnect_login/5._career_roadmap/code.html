@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Career Roadmap - SkillNect</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .timeline-gradient-node {
+            background: linear-gradient(135deg, #137fec 0%, #34d399 100%);
+        }
+        .timeline-locked-node {
+            background: #3b4754;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full max-w-[430px] mx-auto flex-col bg-background-light dark:bg-background-dark overflow-x-hidden shadow-2xl">
+<!-- TopAppBar Component -->
+<header class="sticky top-0 z-50 bg-background-light dark:bg-background-dark/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+<div class="flex items-center p-4 pb-2 justify-between">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 cursor-pointer transition-colors">
+<span class="material-symbols-outlined">arrow_back_ios</span>
+</div>
+<div class="flex flex-col items-center">
+<span class="text-[10px] font-bold uppercase tracking-widest text-primary">SkillNect</span>
+<h2 class="text-lg font-bold leading-tight tracking-tight">5. Career Roadmap</h2>
+</div>
+<div class="flex size-10 items-center justify-end">
+<button class="flex cursor-pointer items-center justify-center rounded-lg h-10 w-10 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors">
+<span class="material-symbols-outlined">share</span>
+</button>
+</div>
+</div>
+<!-- ProgressBar Component Integration -->
+<div class="flex flex-col gap-2 p-4 pt-2">
+<div class="flex justify-between items-end">
+<p class="text-xs font-medium uppercase tracking-wider text-slate-500 dark:text-slate-400">Current Progress</p>
+<p class="text-sm font-bold text-primary">65%</p>
+</div>
+<div class="h-2 w-full rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 65%;"></div>
+</div>
+</div>
+</header>
+<!-- HeadlineText Component -->
+<section class="px-4 pt-6">
+<h3 class="tracking-tight text-2xl font-bold leading-tight">Your Path to Senior Cloud Architect</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Based on your skills in Python and AWS.</p>
+</section>
+<!-- Timeline Component -->
+<section class="mt-8 px-4">
+<div class="grid grid-cols-[40px_1fr] gap-x-4">
+<!-- Milestone 1: Completed -->
+<div class="flex flex-col items-center">
+<div class="z-10 flex size-10 items-center justify-center rounded-full bg-emerald-500 text-white shadow-lg shadow-emerald-500/20">
+<span class="material-symbols-outlined text-xl">check</span>
+</div>
+<div class="w-[2px] bg-emerald-500 h-full"></div>
+</div>
+<div class="flex flex-col pb-10">
+<div class="bg-slate-100 dark:bg-slate-800/50 p-4 rounded-xl border border-slate-200 dark:border-slate-800">
+<p class="text-sm font-bold text-emerald-500 uppercase tracking-tighter mb-1">Step 1 • Completed</p>
+<p class="text-base font-bold leading-normal">Cloud Fundamentals</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs mt-1">AWS Certified Cloud Practitioner achieved</p>
+</div>
+</div>
+<!-- Milestone 2: Completed -->
+<div class="flex flex-col items-center">
+<div class="z-10 flex size-10 items-center justify-center rounded-full bg-emerald-500 text-white shadow-lg shadow-emerald-500/20">
+<span class="material-symbols-outlined text-xl">check</span>
+</div>
+<div class="w-[2px] bg-primary h-full"></div>
+</div>
+<div class="flex flex-col pb-10">
+<div class="bg-slate-100 dark:bg-slate-800/50 p-4 rounded-xl border border-slate-200 dark:border-slate-800">
+<p class="text-sm font-bold text-emerald-500 uppercase tracking-tighter mb-1">Step 2 • Completed</p>
+<p class="text-base font-bold leading-normal">Backend Scalability</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs mt-1">Mastered Microservices with FastAPI</p>
+</div>
+</div>
+<!-- Milestone 3: In Progress -->
+<div class="flex flex-col items-center">
+<div class="z-10 flex size-10 items-center justify-center rounded-full timeline-gradient-node text-white shadow-lg shadow-primary/30 ring-4 ring-primary/20">
+<span class="material-symbols-outlined text-xl animate-pulse">rocket_launch</span>
+</div>
+<div class="w-[2px] bg-slate-300 dark:bg-slate-700 h-full border-dashed border-l-2 border-slate-500"></div>
+</div>
+<div class="flex flex-col pb-10">
+<div class="bg-white dark:bg-slate-800 p-4 rounded-xl border-2 border-primary shadow-xl ring-1 ring-primary/10">
+<div class="flex justify-between items-start mb-2">
+<p class="text-sm font-bold text-primary uppercase tracking-tighter">Step 3 • In Progress</p>
+<span class="bg-primary/10 text-primary text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Current</span>
+</div>
+<p class="text-base font-bold leading-normal">Infrastructure as Code (IaC)</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm mt-1">Learning Terraform and CloudFormation to automate deployment.</p>
+<div class="mt-4 flex gap-2">
+<button class="bg-primary hover:bg-primary/90 text-white text-xs font-bold py-2 px-4 rounded-lg flex items-center gap-2 transition-all">
+<span class="material-symbols-outlined text-sm">play_circle</span>
+                                Resume Learning
+                            </button>
+</div>
+</div>
+</div>
+<!-- Milestone 4: Locked -->
+<div class="flex flex-col items-center">
+<div class="z-10 flex size-10 items-center justify-center rounded-full bg-slate-200 dark:bg-slate-800 text-slate-500">
+<span class="material-symbols-outlined text-xl">lock</span>
+</div>
+<div class="w-[2px] bg-slate-200 dark:bg-slate-800 h-full"></div>
+</div>
+<div class="flex flex-col pb-10 opacity-60">
+<div class="bg-slate-100 dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800">
+<p class="text-sm font-bold text-slate-500 uppercase tracking-tighter mb-1">Step 4 • Locked</p>
+<p class="text-base font-medium leading-normal">Enterprise System Design</p>
+<p class="text-slate-500 dark:text-slate-400 text-xs mt-1">Locked until Step 3 is 100% complete</p>
+</div>
+</div>
+<!-- Milestone 5: Goal -->
+<div class="flex flex-col items-center">
+<div class="z-10 flex size-10 items-center justify-center rounded-full bg-slate-200 dark:bg-slate-800 text-slate-500">
+<span class="material-symbols-outlined text-xl">emoji_events</span>
+</div>
+</div>
+<div class="flex flex-col pb-6 opacity-60">
+<div class="bg-slate-100 dark:bg-slate-900 p-4 rounded-xl border border-slate-200 dark:border-slate-800">
+<p class="text-sm font-bold text-slate-500 uppercase tracking-tighter mb-1">Target Role</p>
+<p class="text-base font-medium leading-normal">Senior Cloud Architect</p>
+</div>
+</div>
+</div>
+</section>
+<!-- SectionHeader Component -->
+<section class="mt-4">
+<h3 class="text-lg font-bold leading-tight tracking-tight px-4 pb-2 pt-4">Recommended Resources</h3>
+<!-- Horizontal Scroll Resources -->
+<div class="flex overflow-x-auto gap-4 px-4 pb-8 custom-scrollbar">
+<!-- Resource 1 -->
+<div class="flex-none w-48 bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800">
+<div class="h-28 w-full bg-slate-200 relative">
+<img alt="Resource Image" class="w-full h-full object-cover" data-alt="Modern abstract design for cloud computing course" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDT87P7D3CGRbgveHROcF6N_GcRDjgXkwhjiQAYROdkJVOTd2rj1Tvfk5PGGbMpDLaOWoGCrNDpOvQA7b19mL4FugrvvG5r2-tXU74SYHeMzsnBivD_whVZPbxC5rn-E_okK9y4R6vuqXkZguh-TBl0xebjimB4ivFnquhyRhNxMg6KVMaiA4SqdOtHngKcDLYqd0UasE7NW_Q2o7aK2tTsMBYMBN0Pfk4sQSqfM6Cy74Yw4Kw2B2xPk4VEJy58c-SZOKYk34UDceEj"/>
+<div class="absolute top-2 right-2 bg-black/60 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-0.5 rounded">
+                            4.8 ★
+                        </div>
+</div>
+<div class="p-3">
+<p class="text-[10px] font-bold text-primary uppercase mb-1">Course • Udemy</p>
+<p class="text-sm font-bold leading-tight line-clamp-2">Terraform Masterclass 2024</p>
+<div class="flex items-center gap-1 mt-2 text-slate-500">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span class="text-[10px]">12.5 Hours</span>
+</div>
+</div>
+</div>
+<!-- Resource 2 -->
+<div class="flex-none w-48 bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800">
+<div class="h-28 w-full bg-slate-200 relative">
+<img alt="Resource Image" class="w-full h-full object-cover" data-alt="Abstract code architecture and system design pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAufcAupXWu4tszMnATFHbdH4KtAOxpiTQuqC8DEj4Amv7x1jnjE-VZ-GT9z_4rJ2EpE48KwSjQYC-9YZSH6LukRppM5vTwgrWaTv24ceZ6Cmvi4ivRhIKdq6IMAUH_qkbBpgjG5Nxz8eRav5alEZEkb0MwTV6UrYMQlaBP2qIWOO1NWahWmPjwC3t6NaVGfnZ62eW1Hh_zI8ZLTbYRi9PBXRZgOobnBK8KusESWFcTnhDykBzo_IrjQRvlw2OrnMSuVL5xEyFYTL1x"/>
+<div class="absolute top-2 right-2 bg-black/60 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-0.5 rounded">
+                            4.9 ★
+                        </div>
+</div>
+<div class="p-3">
+<p class="text-[10px] font-bold text-primary uppercase mb-1">Documentation • Official</p>
+<p class="text-sm font-bold leading-tight line-clamp-2">AWS Best Practices Whitepaper</p>
+<div class="flex items-center gap-1 mt-2 text-slate-500">
+<span class="material-symbols-outlined text-[14px]">description</span>
+<span class="text-[10px]">Reading • 45m</span>
+</div>
+</div>
+</div>
+<!-- Resource 3 -->
+<div class="flex-none w-48 bg-white dark:bg-slate-800 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800">
+<div class="h-28 w-full bg-slate-200 relative">
+<img alt="Resource Image" class="w-full h-full object-cover" data-alt="Cybersecurity and cloud infrastructure visual theme" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_TxDOPxNOF7WLPso0FaVrdkcS3gCJFOyN93NnRnYkqMoHhvFxezo8LwqExjoA7DnL6cjlsOQSOKLBAv7yaIQz7-kuduFl7630m4O83jjQ-ibN-fN3L-abtNe_Y9Hyd1rIqYqHulu1BIvmKX6c6EFN2wbtMfTYm79Bz4iDsZLR3XNHDStSNIVto-qSkmKImXAMSnHaJUfs1XUzgMC94LZCJekSynUzW2opd9xahR4NnrdMGcqjooYL_CvPPDnnZ1UOhlTmMOS_FjrT"/>
+<div class="absolute top-2 right-2 bg-black/60 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-0.5 rounded">
+                            4.7 ★
+                        </div>
+</div>
+<div class="p-3">
+<p class="text-[10px] font-bold text-primary uppercase mb-1">Course • Coursera</p>
+<p class="text-sm font-bold leading-tight line-clamp-2">DevSecOps in Practice</p>
+<div class="flex items-center gap-1 mt-2 text-slate-500">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span class="text-[10px]">22 Hours</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Sticky Bottom Action -->
+<div class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-lg p-4 pt-2 border-t border-slate-200 dark:border-slate-800">
+<button class="w-full bg-primary text-white h-14 rounded-xl font-bold flex items-center justify-center gap-2 shadow-lg shadow-primary/20 hover:scale-[0.98] transition-transform">
+<span>Resume Step 3: Infrastructure</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</body></html>

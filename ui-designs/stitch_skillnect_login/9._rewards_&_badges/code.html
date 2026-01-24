@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>9. Rewards &amp; Badges</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                        "accent-purple": "#8b5cf6",
+                        "accent-violet": "#7c3aed",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .reward-gradient {
+            background: linear-gradient(135deg, #7c3aed 0%, #8b5cf6 50%, #137fec 100%);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<header class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-50">
+<div class="text-slate-900 dark:text-white flex size-12 shrink-0 items-center justify-start">
+<span class="material-symbols-outlined cursor-pointer">arrow_back_ios</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">Rewards</h2>
+<div class="flex w-12 items-center justify-end">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 bg-transparent text-slate-900 dark:text-white gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0">
+<span class="material-symbols-outlined">info</span>
+</button>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto pb-10">
+<!-- ProfileHeader / Hero Section with Vibrant Gradient -->
+<div class="p-4 pt-2">
+<div class="reward-gradient rounded-xl p-8 flex flex-col items-center shadow-lg shadow-accent-violet/20">
+<div class="relative mb-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full border-4 border-white/20 h-24 w-24" data-alt="User profile avatar with premium border" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBUl0R28wVH6sI5r542DLAp9VTx97568ex_CtjJ5FwcLxZAZZU3qOVv-rEmWlBQUso_MmHJ-_kUsO-GIjLY0jv4V20pXNmUd5s1tYITNAFAYx8okxRVmJK-d4namkG0VWa7PUOlYcZJONpGmG-GkD1_4aYf3-gX8Y7oyXJQm5jqaf6ep1qjlVBn49mjoqhGiaiYIJlmyUP9SP-PsrWkzMQtD3l_3suK4mM2inyACITETLcMx8udkymGZekNEggZjgbsXSOt7-MyVSFR");'>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-white rounded-full p-1 flex items-center justify-center">
+<span class="material-symbols-outlined text-accent-violet text-sm font-bold">verified</span>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center">
+<p class="text-white text-3xl font-bold leading-tight tracking-tight text-center">2,450 XP</p>
+<p class="text-white/90 text-lg font-medium leading-normal text-center">Senior Pathfinder</p>
+</div>
+</div>
+</div>
+<!-- Motivational Messaging Banner -->
+<div class="px-4 pb-4">
+<div class="bg-primary/10 border border-primary/20 rounded-xl p-4 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">auto_awesome</span>
+<p class="text-slate-700 dark:text-slate-300 text-sm font-medium">
+                    Keep going! You're only <span class="text-primary font-bold">50 points</span> from becoming a "Master Architect".
+                </p>
+</div>
+</div>
+<!-- ProgressBar Component -->
+<div class="flex flex-col gap-3 p-4">
+<div class="flex gap-6 justify-between">
+<p class="text-slate-900 dark:text-white text-base font-semibold leading-normal">Level Progress</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal tracking-wide">2,450 / 2,500 XP</p>
+</div>
+<div class="rounded-full bg-slate-200 dark:bg-slate-800 h-3 overflow-hidden">
+<div class="h-full rounded-full reward-gradient" style="width: 85%;"></div>
+</div>
+</div>
+<!-- SectionHeader: Achievement Badges -->
+<div class="flex items-center justify-between px-4 pt-6 pb-2">
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Achievement Badges</h3>
+<button class="text-primary text-sm font-semibold">View All</button>
+</div>
+<!-- ImageGrid for Badges -->
+<div class="grid grid-cols-2 gap-4 p-4">
+<!-- Unlocked Badge 1 -->
+<div class="glass-card flex flex-col gap-3 rounded-xl p-4 aspect-square items-center justify-center text-center">
+<div class="reward-gradient size-20 rounded-full flex items-center justify-center mb-1 shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-white text-4xl">terminal</span>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-sm font-bold leading-tight">Code Ninja</p>
+<p class="text-slate-500 dark:text-slate-400 text-[10px] uppercase tracking-widest font-bold mt-1">Unlocked</p>
+</div>
+</div>
+<!-- Unlocked Badge 2 -->
+<div class="glass-card flex flex-col gap-3 rounded-xl p-4 aspect-square items-center justify-center text-center">
+<div class="reward-gradient size-20 rounded-full flex items-center justify-center mb-1 shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined text-white text-4xl">hub</span>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-sm font-bold leading-tight">Networking Pro</p>
+<p class="text-slate-500 dark:text-slate-400 text-[10px] uppercase tracking-widest font-bold mt-1">Unlocked</p>
+</div>
+</div>
+<!-- In Progress Badge 3 -->
+<div class="glass-card flex flex-col gap-3 rounded-xl p-4 aspect-square items-center justify-center text-center opacity-60">
+<div class="bg-slate-200 dark:bg-slate-800 size-20 rounded-full flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-slate-400 dark:text-slate-500 text-4xl">record_voice_over</span>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-sm font-bold leading-tight">Interview Ready</p>
+<p class="text-slate-500 dark:text-slate-400 text-[10px] uppercase tracking-widest font-bold mt-1">75% Done</p>
+</div>
+</div>
+<!-- Locked Badge 4 -->
+<div class="glass-card flex flex-col gap-3 rounded-xl p-4 aspect-square items-center justify-center text-center opacity-40">
+<div class="bg-slate-200 dark:bg-slate-800 size-20 rounded-full flex items-center justify-center mb-1">
+<span class="material-symbols-outlined text-slate-400 dark:text-slate-500 text-4xl">lock</span>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-sm font-bold leading-tight">Fast Learner</p>
+<p class="text-slate-500 dark:text-slate-400 text-[10px] uppercase tracking-widest font-bold mt-1">Locked</p>
+</div>
+</div>
+</div>
+<!-- Recent Activity Section -->
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pt-6 pb-4">Recent Activity</h3>
+<div class="px-4 flex flex-col gap-3">
+<div class="flex items-center justify-between p-4 glass-card rounded-xl">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-full bg-green-500/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-green-500 text-xl">check_circle</span>
+</div>
+<div>
+<p class="text-sm font-bold">Python Fundamentals</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">Lesson completed</p>
+</div>
+</div>
+<p class="text-primary font-bold">+50 XP</p>
+</div>
+<div class="flex items-center justify-between p-4 glass-card rounded-xl">
+<div class="flex items-center gap-3">
+<div class="size-10 rounded-full bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-xl">group</span>
+</div>
+<div>
+<p class="text-sm font-bold">Peer Review</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">Provided feedback</p>
+</div>
+</div>
+<p class="text-primary font-bold">+20 XP</p>
+</div>
+</div>
+<!-- Floating CTA -->
+<div class="p-4 mt-6">
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">rocket_launch</span>
+                Complete a lesson to earn more
+            </button>
+</div>
+</main>
+<!-- Navigation Tab Bar (iOS style) -->
+<nav class="bg-background-light dark:bg-background-dark border-t border-slate-200 dark:border-slate-800 px-6 py-3 flex justify-between items-center pb-8">
+<div class="flex flex-col items-center text-slate-400">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] mt-1">Home</span>
+</div>
+<div class="flex flex-col items-center text-slate-400">
+<span class="material-symbols-outlined">explore</span>
+<span class="text-[10px] mt-1">Path</span>
+</div>
+<div class="flex flex-col items-center text-primary">
+<span class="material-symbols-outlined fill-current">emoji_events</span>
+<span class="text-[10px] mt-1 font-bold">Rewards</span>
+</div>
+<div class="flex flex-col items-center text-slate-400">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] mt-1">Profile</span>
+</div>
+</nav>
+</body></html>

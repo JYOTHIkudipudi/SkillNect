@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SkillNect - Skill Tracker</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex justify-center">
+<div class="relative flex h-full min-h-screen w-full max-w-[430px] flex-col bg-white dark:bg-background-dark shadow-2xl overflow-x-hidden">
+<!-- TopAppBar -->
+<div class="flex items-center bg-white dark:bg-background-dark px-4 py-3 justify-between sticky top-0 z-10 border-b border-gray-100 dark:border-gray-800">
+<div class="flex size-10 shrink-0 items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-8 border border-gray-200" data-alt="User profile avatar showing professional portrait" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDUP83vW2_nRSrA4GDqdoMA8GfMdA5mwyuvfAgKSthu00yLNhcqphF4Y9641JJ35OPpQFpB1JS7HODKlLD2HFN3soeqetpbcxMhpW7T43x4VwpMeBkTXkjtg-recYvng5mPlG7-7u6QDSKyEY9bR2NrqRzYbp8265-k7abRnOtzv3h9et8X5QG7CpiiYdSxwHoPBXcbWUd7SBmzA0RmWzAEc2eGkUNcKwdYoMHim4jMKXtDOk7JvF1a9Ukei1Nq90rsQft0mGZlgbJg");'></div>
+</div>
+<h2 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">SkillNect</h2>
+<div class="flex w-10 items-center justify-end">
+<button class="flex cursor-pointer items-center justify-center rounded-lg h-10 w-10 bg-transparent text-[#111418] dark:text-white">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+</div>
+<!-- SectionHeader -->
+<div class="px-4 pt-6 pb-2">
+<h2 class="text-[#111418] dark:text-white text-[24px] font-bold leading-tight tracking-[-0.015em]">Skill Tracker</h2>
+<p class="text-[#617589] text-sm font-normal mt-1">Monitor your professional growth</p>
+</div>
+<!-- Growth Chart Section (New Component) -->
+<div class="px-4 py-4">
+<div class="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-xl p-4 shadow-sm">
+<div class="flex justify-between items-end mb-4">
+<div>
+<p class="text-[#617589] text-xs font-semibold uppercase tracking-wider">Proficiency Growth</p>
+<p class="text-[#111418] dark:text-white text-2xl font-bold">+24% <span class="text-green-500 text-sm font-medium">↑ this month</span></p>
+</div>
+<div class="flex gap-1">
+<div class="h-8 w-2 bg-primary/10 rounded-full flex flex-col justify-end overflow-hidden"><div class="h-2/6 bg-primary/40 w-full"></div></div>
+<div class="h-8 w-2 bg-primary/10 rounded-full flex flex-col justify-end overflow-hidden"><div class="h-3/6 bg-primary/40 w-full"></div></div>
+<div class="h-8 w-2 bg-primary/10 rounded-full flex flex-col justify-end overflow-hidden"><div class="h-4/6 bg-primary/60 w-full"></div></div>
+<div class="h-8 w-2 bg-primary/10 rounded-full flex flex-col justify-end overflow-hidden"><div class="h-5/6 bg-primary/80 w-full"></div></div>
+<div class="h-8 w-2 bg-primary/10 rounded-full flex flex-col justify-end overflow-hidden"><div class="h-full bg-primary w-full"></div></div>
+</div>
+</div>
+<!-- Simple Abstract Area Chart Representation using CSS Gradients -->
+<div class="h-32 w-full bg-gradient-to-t from-primary/5 to-transparent rounded-lg relative overflow-hidden border-b border-l border-gray-100 dark:border-gray-800">
+<svg class="absolute bottom-0 left-0 w-full h-24 stroke-primary fill-none" preserveaspectratio="none" viewbox="0 0 400 100">
+<path d="M0,80 Q50,70 100,50 T200,60 T300,30 T400,10" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+<div class="absolute bottom-2 left-0 w-full flex justify-between px-2 text-[10px] text-[#617589]">
+<span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Stats -->
+<div class="flex px-4 gap-3 mb-4">
+<div class="flex-1 bg-primary/5 dark:bg-primary/10 p-3 rounded-xl border border-primary/10">
+<p class="text-[#617589] text-[10px] font-bold uppercase">Skills Active</p>
+<p class="text-primary text-xl font-bold">12</p>
+</div>
+<div class="flex-1 bg-primary/5 dark:bg-primary/10 p-3 rounded-xl border border-primary/10">
+<p class="text-[#617589] text-[10px] font-bold uppercase">Certificates</p>
+<p class="text-primary text-xl font-bold">4</p>
+</div>
+<div class="flex-1 bg-primary/5 dark:bg-primary/10 p-3 rounded-xl border border-primary/10">
+<p class="text-[#617589] text-[10px] font-bold uppercase">Rank</p>
+<p class="text-primary text-xl font-bold">Top 5%</p>
+</div>
+</div>
+<div class="px-4 py-2">
+<h3 class="text-[#111418] dark:text-white text-sm font-bold uppercase tracking-wider mb-2">My Skillset</h3>
+</div>
+<!-- ListItem - UI/UX -->
+<div class="flex items-center gap-4 bg-white dark:bg-background-dark px-4 min-h-[72px] py-2 justify-between">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-12">
+<span class="material-symbols-outlined">palette</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-[#111418] dark:text-white text-base font-semibold leading-normal line-clamp-1">UI/UX Design</p>
+<p class="text-[#617589] text-sm font-normal leading-normal">Advanced</p>
+</div>
+</div>
+<div class="shrink-0 flex flex-col items-end gap-1">
+<div class="flex items-center gap-3">
+<div class="w-[88px] h-1.5 overflow-hidden rounded-full bg-gray-100 dark:bg-gray-800">
+<div class="h-full rounded-full bg-gradient-to-r from-primary/60 to-primary" style="width: 85%;"></div>
+</div>
+<p class="text-[#111418] dark:text-white text-sm font-bold leading-normal">85</p>
+</div>
+<span class="text-[10px] text-green-500 font-medium">+2 this week</span>
+</div>
+</div>
+<!-- ListItem - Python -->
+<div class="flex items-center gap-4 bg-white dark:bg-background-dark px-4 min-h-[72px] py-2 justify-between">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-12">
+<span class="material-symbols-outlined">code</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-[#111418] dark:text-white text-base font-semibold leading-normal line-clamp-1">Python Programming</p>
+<p class="text-[#617589] text-sm font-normal leading-normal">Intermediate</p>
+</div>
+</div>
+<div class="shrink-0 flex flex-col items-end gap-1">
+<div class="flex items-center gap-3">
+<div class="w-[88px] h-1.5 overflow-hidden rounded-full bg-gray-100 dark:bg-gray-800">
+<div class="h-full rounded-full bg-gradient-to-r from-primary/60 to-primary" style="width: 60%;"></div>
+</div>
+<p class="text-[#111418] dark:text-white text-sm font-bold leading-normal">60</p>
+</div>
+<span class="text-[10px] text-green-500 font-medium">+5 this week</span>
+</div>
+</div>
+<!-- ListItem - Data Analysis -->
+<div class="flex items-center gap-4 bg-white dark:bg-background-dark px-4 min-h-[72px] py-2 justify-between">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-12">
+<span class="material-symbols-outlined">analytics</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-[#111418] dark:text-white text-base font-semibold leading-normal line-clamp-1">Data Analysis</p>
+<p class="text-[#617589] text-sm font-normal leading-normal">Intermediate</p>
+</div>
+</div>
+<div class="shrink-0 flex flex-col items-end gap-1">
+<div class="flex items-center gap-3">
+<div class="w-[88px] h-1.5 overflow-hidden rounded-full bg-gray-100 dark:bg-gray-800">
+<div class="h-full rounded-full bg-gradient-to-r from-primary/60 to-primary" style="width: 45%;"></div>
+</div>
+<p class="text-[#111418] dark:text-white text-sm font-bold leading-normal">45</p>
+</div>
+<span class="text-[10px] text-gray-400 font-medium">No change</span>
+</div>
+</div>
+<!-- ListItem - Strategic Planning -->
+<div class="flex items-center gap-4 bg-white dark:bg-background-dark px-4 min-h-[72px] py-2 justify-between">
+<div class="flex items-center gap-4">
+<div class="text-primary flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-12">
+<span class="material-symbols-outlined">strategy</span>
+</div>
+<div class="flex flex-col justify-center">
+<p class="text-[#111418] dark:text-white text-base font-semibold leading-normal line-clamp-1">Strategic Planning</p>
+<p class="text-[#617589] text-sm font-normal leading-normal">Beginner</p>
+</div>
+</div>
+<div class="shrink-0 flex flex-col items-end gap-1">
+<div class="flex items-center gap-3">
+<div class="w-[88px] h-1.5 overflow-hidden rounded-full bg-gray-100 dark:bg-gray-800">
+<div class="h-full rounded-full bg-gradient-to-r from-primary/60 to-primary" style="width: 20%;"></div>
+</div>
+<p class="text-[#111418] dark:text-white text-sm font-bold leading-normal">20</p>
+</div>
+<span class="text-[10px] text-green-500 font-medium">New!</span>
+</div>
+</div>
+<!-- Add Skill Action -->
+<div class="px-4 py-6 mt-auto">
+<button class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-primary/20 transition-all">
+<span class="material-symbols-outlined">add_circle</span>
+                Add New Skill
+            </button>
+</div>
+<!-- Navigation Bar (iOS Style) -->
+<div class="flex justify-around bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-t border-gray-100 dark:border-gray-800 py-3 pb-8">
+<button class="flex flex-col items-center gap-1 text-[#617589]">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">monitoring</span>
+<span class="text-[10px] font-medium">Tracker</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-[#617589]">
+<span class="material-symbols-outlined">school</span>
+<span class="text-[10px] font-medium">Courses</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-[#617589]">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium">Profile</span>
+</button>
+</div>
+</div>
+</body></html>

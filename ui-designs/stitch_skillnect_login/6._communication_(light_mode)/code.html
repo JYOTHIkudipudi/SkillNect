@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Communication Trainer - SkillNect</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .ios-shadow {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-screen max-w-md mx-auto flex-col bg-background-light dark:bg-background-dark overflow-x-hidden">
+<!-- TopAppBar -->
+<div class="flex items-center bg-white dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10 border-b border-gray-100 dark:border-gray-800">
+<div class="text-[#111418] dark:text-white flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer">
+<span class="material-symbols-outlined">arrow_back_ios</span>
+</div>
+<h2 class="text-[#111418] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-10">SkillNect</h2>
+</div>
+<div class="flex-1 overflow-y-auto pb-10">
+<!-- SectionHeader -->
+<div class="px-4 pt-6">
+<h2 class="text-[#111418] dark:text-white text-[24px] font-bold leading-tight tracking-[-0.015em]">Communication Trainer</h2>
+<p class="text-[#617589] text-sm mt-1">Master the art of verbal persuasion</p>
+</div>
+<!-- PageIndicators (Level Roadmap) -->
+<div class="px-4 py-6">
+<div class="flex w-full flex-row items-center justify-between gap-1 px-2">
+<!-- Levels 1-8 -->
+<div class="flex flex-col items-center gap-2">
+<div class="h-8 w-8 rounded-full bg-primary flex items-center justify-center text-white text-xs font-bold shadow-lg shadow-primary/30">1</div>
+<span class="text-[10px] font-medium text-primary">Active</span>
+</div>
+<div class="h-[2px] flex-1 bg-gray-200 dark:bg-gray-700 mx-1"></div>
+<div class="flex flex-col items-center gap-2 opacity-50">
+<div class="h-8 w-8 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 text-xs font-bold">2</div>
+</div>
+<div class="h-[2px] flex-1 bg-gray-200 dark:bg-gray-700 mx-1"></div>
+<div class="flex flex-col items-center gap-2 opacity-50">
+<div class="h-8 w-8 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 text-xs font-bold">3</div>
+</div>
+<div class="h-[2px] flex-1 bg-gray-200 dark:bg-gray-700 mx-1"></div>
+<div class="flex flex-col items-center gap-2 opacity-50">
+<div class="h-8 w-8 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-500 text-xs font-bold">4</div>
+</div>
+<div class="h-[2px] flex-1 bg-gray-200 dark:bg-gray-700 mx-1"></div>
+<div class="flex flex-col items-center gap-2 opacity-30">
+<div class="h-6 w-6 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-400 text-[10px] font-bold">...</div>
+</div>
+<div class="h-[2px] flex-1 bg-gray-200 dark:bg-gray-700 mx-1"></div>
+<div class="flex flex-col items-center gap-2 opacity-30">
+<div class="h-8 w-8 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-400 text-xs font-bold">8</div>
+</div>
+</div>
+</div>
+<!-- Card: Speaking Topic -->
+<div class="p-4">
+<div class="flex flex-col items-stretch justify-start rounded-xl ios-shadow bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 overflow-hidden">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover" data-alt="Abstract vibrant gradient representing voice waves" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB-rIg_fgd1u9LC1e28Fl5kqD1z1RbbBNfLseQxQmhRiVtYu4W2iYbich79F0TEu8MEOrvQBOB1RPsXyAYll5GKyqmniHBwGsv11Hr1Fm3JLFSOM0pxR34AGUSfpIhXzH-xQxz-uJiAi12ApVsWLb8boAauwfuIOJAk026uQ0o4dtnlCVg8COXyHPj29TyjBAlMLners5E4itrScQK_Z_LuAkhDuLQZ4KUzCXz3GsYMUzVuViNiN5OYzYeZ3lp1fPL7KCYLJuWIc_Ac");'>
+<div class="w-full h-full bg-black/20 flex items-center justify-center backdrop-blur-[2px]">
+<div class="bg-white/20 p-4 rounded-full backdrop-blur-md">
+<span class="material-symbols-outlined text-white text-4xl">mic</span>
+</div>
+</div>
+</div>
+<div class="flex w-full flex-col items-stretch justify-center gap-3 py-6 px-5">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider rounded">Current Task</span>
+</div>
+<p class="text-[#111418] dark:text-white text-xl font-bold leading-tight tracking-[-0.015em]">Explain Cloud Computing to a 5-year-old</p>
+<p class="text-[#617589] dark:text-gray-400 text-sm leading-relaxed">
+<span class="font-semibold text-gray-700 dark:text-gray-200">Speaking Focus:</span> Simplicity and Analogy. Avoid jargon and focus on relatable examples like "digital toy boxes."
+                        </p>
+</div>
+</div>
+</div>
+<!-- Timer Display -->
+<div class="px-4 mt-2">
+<div class="bg-white dark:bg-gray-900 rounded-xl p-6 ios-shadow border border-gray-100 dark:border-gray-800">
+<div class="flex items-center justify-between mb-4">
+<span class="text-sm font-semibold text-gray-500">Remaining Time</span>
+<span class="material-symbols-outlined text-primary">timer</span>
+</div>
+<div class="flex gap-4">
+<div class="flex grow basis-0 flex-col items-stretch gap-2">
+<div class="flex h-20 grow items-center justify-center rounded-xl px-3 bg-background-light dark:bg-gray-800">
+<p class="text-[#111418] dark:text-white text-3xl font-bold tracking-tighter">02</p>
+</div>
+<div class="flex items-center justify-center"><p class="text-gray-500 text-xs font-medium uppercase">Minutes</p></div>
+</div>
+<div class="flex items-center justify-center text-2xl font-bold pb-6">:</div>
+<div class="flex grow basis-0 flex-col items-stretch gap-2">
+<div class="flex h-20 grow items-center justify-center rounded-xl px-3 bg-background-light dark:bg-gray-800">
+<p class="text-[#111418] dark:text-white text-3xl font-bold tracking-tighter">00</p>
+</div>
+<div class="flex items-center justify-center"><p class="text-gray-500 text-xs font-medium uppercase">Seconds</p></div>
+</div>
+</div>
+<button class="w-full mt-6 flex h-14 cursor-pointer items-center justify-center overflow-hidden rounded-xl bg-gradient-to-r from-primary to-[#3a96f3] text-white text-lg font-semibold shadow-lg shadow-primary/20 hover:scale-[0.98] transition-transform">
+<span class="truncate">Start Training</span>
+</button>
+</div>
+</div>
+<!-- AI Feedback Section (Upcoming/Preview) -->
+<div class="px-4 py-8">
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-[#111418] dark:text-white text-lg font-bold">Live AI Feedback</h3>
+<span class="text-xs text-primary font-bold">Enabled</span>
+</div>
+<div class="grid grid-cols-3 gap-3">
+<div class="flex flex-col items-center justify-center p-3 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800">
+<span class="material-symbols-outlined text-green-500 text-xl mb-1">speed</span>
+<span class="text-[10px] text-gray-500 font-medium">Pacing</span>
+<span class="text-sm font-bold">--</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800">
+<span class="material-symbols-outlined text-blue-500 text-xl mb-1">graphic_eq</span>
+<span class="text-[10px] text-gray-500 font-medium">Clarity</span>
+<span class="text-sm font-bold">--</span>
+</div>
+<div class="flex flex-col items-center justify-center p-3 bg-white dark:bg-gray-900 rounded-xl border border-gray-100 dark:border-gray-800">
+<span class="material-symbols-outlined text-purple-500 text-xl mb-1">psychology</span>
+<span class="text-[10px] text-gray-500 font-medium">Vocabulary</span>
+<span class="text-sm font-bold">--</span>
+</div>
+</div>
+<div class="mt-4 p-4 bg-primary/5 rounded-lg border border-primary/10">
+<p class="text-xs text-[#1380ec] leading-relaxed italic">"AI will analyze your tone, pace, and clarity in real-time once you start speaking."</p>
+</div>
+</div>
+</div>
+<!-- Navigation Bar (iOS Style) -->
+<div class="bg-white dark:bg-background-dark border-t border-gray-100 dark:border-gray-800 px-6 py-3 flex justify-between items-center safe-area-bottom">
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-gray-400">home</span>
+<span class="text-[10px] font-medium text-gray-400">Home</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-primary">record_voice_over</span>
+<span class="text-[10px] font-bold text-primary">Train</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-gray-400">school</span>
+<span class="text-[10px] font-medium text-gray-400">Learn</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-gray-400">person</span>
+<span class="text-[10px] font-medium text-gray-400">Profile</span>
+</div>
+</div>
+</div>
+</body></html>

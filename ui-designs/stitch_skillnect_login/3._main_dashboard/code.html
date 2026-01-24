@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SkillNect Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-gradient {
+            background: linear-gradient(135deg, #137fec 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display min-h-screen flex flex-col">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+<div class="flex items-center p-4 justify-between max-w-md mx-auto">
+<div class="text-primary flex size-10 items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">menu</span>
+</div>
+<h2 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">SkillNect</h2>
+<div class="flex w-10 items-center justify-end">
+<button class="flex items-center justify-center overflow-hidden rounded-full h-10 w-10 bg-primary/10 text-primary">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 max-w-md mx-auto w-full pb-24">
+<!-- Welcome Section (White/Contrast) -->
+<section class="mt-4 mx-4 p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
+<h2 class="text-gray-900 dark:text-white tracking-tight text-2xl font-bold leading-tight pb-1">Welcome Back, Alex</h2>
+<p class="text-gray-600 dark:text-gray-400 text-sm font-normal leading-normal pb-6">Your career command center is ready.</p>
+<!-- Progress Bar Integration -->
+<div class="flex flex-col gap-3">
+<div class="flex gap-6 justify-between items-end">
+<p class="text-gray-900 dark:text-white text-sm font-semibold leading-normal">Skill Completion Progress</p>
+<p class="text-primary text-sm font-bold leading-normal">68%</p>
+</div>
+<div class="rounded-full bg-gray-100 dark:bg-gray-700 h-2 overflow-hidden">
+<div class="h-full rounded-full bg-primary" style="width: 68%;"></div>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-xs font-normal leading-normal">3 courses to reach Senior Level Architect.</p>
+</div>
+</section>
+<div class="px-4">
+<h3 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] pb-4 pt-8">Career Hub</h3>
+<!-- Feature Grid -->
+<div class="grid grid-cols-2 gap-4">
+<!-- Card 1: Skill Map -->
+<div class="bg-white dark:bg-gray-800 p-5 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined icon-gradient">explore</span>
+</div>
+<div>
+<h4 class="text-gray-900 dark:text-white font-bold text-base">Skill Map</h4>
+<p class="text-gray-500 dark:text-gray-400 text-xs mt-1 leading-snug">Visualize your growth and gaps</p>
+</div>
+</div>
+<!-- Card 2: Job Match -->
+<div class="bg-white dark:bg-gray-800 p-5 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined icon-gradient">work</span>
+</div>
+<div>
+<h4 class="text-gray-900 dark:text-white font-bold text-base">Job Match</h4>
+<p class="text-gray-500 dark:text-gray-400 text-xs mt-1 leading-snug">AI-driven opportunities for you</p>
+</div>
+</div>
+<!-- Card 3: Learning Path -->
+<div class="bg-white dark:bg-gray-800 p-5 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined icon-gradient">school</span>
+</div>
+<div>
+<h4 class="text-gray-900 dark:text-white font-bold text-base">Learning Path</h4>
+<p class="text-gray-500 dark:text-gray-400 text-xs mt-1 leading-snug">Curated courses and modules</p>
+</div>
+</div>
+<!-- Card 4: Mentorship -->
+<div class="bg-white dark:bg-gray-800 p-5 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined icon-gradient">groups</span>
+</div>
+<div>
+<h4 class="text-gray-900 dark:text-white font-bold text-base">Mentorship</h4>
+<p class="text-gray-500 dark:text-gray-400 text-xs mt-1 leading-snug">Connect with industry experts</p>
+</div>
+</div>
+<!-- Card 5: Certifications -->
+<div class="bg-white dark:bg-gray-800 p-5 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined icon-gradient">verified_user</span>
+</div>
+<div>
+<h4 class="text-gray-900 dark:text-white font-bold text-base">Certificates</h4>
+<p class="text-gray-500 dark:text-gray-400 text-xs mt-1 leading-snug">Your verified badges &amp; awards</p>
+</div>
+</div>
+<!-- Card 6: Analytics -->
+<div class="bg-white dark:bg-gray-800 p-5 rounded-xl border border-gray-100 dark:border-gray-700 shadow-sm flex flex-col gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+<span class="material-symbols-outlined icon-gradient">insights</span>
+</div>
+<div>
+<h4 class="text-gray-900 dark:text-white font-bold text-base">Insights</h4>
+<p class="text-gray-500 dark:text-gray-400 text-xs mt-1 leading-snug">Track your market value</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Featured Resource Image Card -->
+<div class="px-4 mt-8 mb-8">
+<div class="relative w-full h-40 rounded-xl overflow-hidden group cursor-pointer">
+<img alt="Career workshop" class="w-full h-full object-cover" data-alt="Group of professionals collaborating in a modern office space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvvqixkemdREJj2QVWPs0LvuqfgCTDcE-C2PSGzzhzb-R7GoJsC7Ka0h089LNnuH9aJEcFSi0PZZBPgxjyw8XNNsecgcyMh9MLnjfdfxb0wMe3gbpVIcnS_apwsAB0O8QxS4Ud7PxJaWA0wnDyIVN5AgVLxdOAfcL5ERinkJQMMP7vwXnhgicWD3i1x0sOecwQKeI2M1XB5tPz7g0NhskfWovXh1fosrYPdkXuOIKZSfbQpZEEVE5ftGS8q9AzimrQZPs6hacy09jC"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 flex flex-col justify-end">
+<span class="bg-primary text-white text-[10px] font-bold px-2 py-0.5 rounded-full w-fit mb-2">HOT RESOURCE</span>
+<h5 class="text-white font-bold text-lg">Mastering AI Tools for Product Managers</h5>
+<p class="text-white/80 text-xs">New workshop available next week.</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Tab Bar (iOS style) -->
+<nav class="fixed bottom-0 left-0 right-0 bg-white/90 dark:bg-background-dark/90 backdrop-blur-xl border-t border-gray-200 dark:border-gray-800 px-6 py-2 pb-6">
+<div class="max-w-md mx-auto flex justify-between items-center">
+<button class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined font-bold">home</span>
+<span class="text-[10px] font-medium">Home</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-400 dark:text-gray-500">
+<span class="material-symbols-outlined">search</span>
+<span class="text-[10px] font-medium">Search</span>
+</button>
+<div class="relative -top-6">
+<button class="bg-primary text-white w-14 h-14 rounded-full shadow-lg shadow-primary/30 flex items-center justify-center border-4 border-background-light dark:border-background-dark">
+<span class="material-symbols-outlined text-[32px]">add</span>
+</button>
+</div>
+<button class="flex flex-col items-center gap-1 text-gray-400 dark:text-gray-500">
+<span class="material-symbols-outlined">chat_bubble</span>
+<span class="text-[10px] font-medium">Community</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-gray-400 dark:text-gray-500">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-[10px] font-medium">Settings</span>
+</button>
+</div>
+</nav>
+</body></html>
