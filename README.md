@@ -61,18 +61,15 @@ Resume/JD Input → Backend Processing → Skill Extraction → Question Generat
 ---
 
 ## 📂 Project Structure
+
+```
 SkillNect/
-│
-├── frontend/ # React frontend
-├── backend/ # Node.js + Express APIs
-├── ai-module/ # AI-related logic (if used)
-│
-├── README.md
-└── .gitignore
-
-
----
-
+├── frontend/        
+├── backend/         
+├── ai-module/       
+├── README.md        
+└── .gitignore       
+```
 ## ▶️ How to Run Locally
 
 ```bash
